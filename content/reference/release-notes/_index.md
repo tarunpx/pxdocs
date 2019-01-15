@@ -70,7 +70,7 @@ series: reference
 
 ## 1.7.5
 
-* PWX-7364 iqvia: Px boot stuck at ns mount
+* PWX-7364 iqvia: Namespace stuck volume issue 
 * PWX-7299 [iqvia]: export pool_status as a stat for prometheus
 * PWX-7267 LIC: Hide unknown/non-handled licenses
 * PWX-7212 Cloudsnap-Restore: Increase restore verbose level for error cases
