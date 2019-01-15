@@ -68,6 +68,14 @@ series: reference
   Workaround: This is a variant of the previous errata. 
   For volume with replication factor set to 1, Cloudsnap backup does not resume after the node with replica goes down.
 
+## 1.7.5
+
+* PWX-7364 iqvia: Px boot stuck at ns mount
+* PWX-7299 [iqvia]: export pool_status as a stat for prometheus
+* PWX-7267 LIC: Hide unknown/non-handled licenses
+* PWX-7212 Cloudsnap-Restore: Increase restore verbose level for error cases
+* PWX-7179 io1 volume added to KOPS cluster gets displayed as STORAGE_MEDIUM_MAGNETIC
+* PWX-7033 Objectostore endpoint failover not happening
 
 ## 1.7.4
 * PWX-7292 For all storage errors retry 3 times before making pool offline
