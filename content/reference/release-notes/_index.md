@@ -78,6 +78,7 @@ series: reference
 * PWX-7033 Objectostore endpoint failover not happening
 
 ## 1.7.4
+
 * PWX-7292 For all storage errors retry 3 times before making pool offline
 * PWX-7291 Detect ssd based pools and mount with nossd if kernel version is less than 4.15
 * PWX-7214 LIC: Goroutine leak at license watch re-supscription
