@@ -6,6 +6,39 @@ keywords: portworx, release notes
 series: reference
 ---
 
+## 2.0.2
+
+### Key Features and Enhancements
+
+* PWX-7205 - Add support for group cloud snapshots via Stork
+* PWX-7208 - Google Cloud KMS integration
+
+### Key Fixes
+
+* PWX-7471 - queue_depth and nodiscard volume setting not getting set through kubernetes
+* PWX-7466 - K8S/Upgrade: Talisman does not support CRI/Containerd
+* PWX-7429 - Groupcloudsnapshot does not show successful status even after all the volumes in the group are snapped and published to the cloud.
+* PWX-7407 - OCI Monitor: Initiates cordoning even when px.ko was not loaded
+* PWX-7396 - Groupcloudsnapshot gets created by status is not updated correctly upon mass creation of snapshots
+* PWX-7395 - Groupcloudsnapshot is run but eventually fails when a postsnapshotrule does not exist
+* PWX-7391 - Make force_fs as default
+* PWX-7366 - Must treat kubernetes-secrets as "volatile mount" by OCI monitor
+* PWX-7364 - Px boot stuck at ns mount
+* PWX-7348 - Handle journal device "offline" cases
+* PWX-7304 - Handle journal device "read-only" cases
+* PWX-7280 - Logs getting flooded with "18 is not 14len(values)" after upgrading the kernel to 4.20.0-1
+* PWX-7272 - Provide way to delete named Google KMS secrets
+* PWX-7271 - 'pxctl secrets gcloud list-secrets' shows unnessassary line in console output
+* PWX-7267 - Hide unknown/non-handled licenses
+* PWX-7226 - DCOS Portworx: Manually updated values in /etc/pwx/config.json does not persists
+* PWX-7207 - Allow docker with selinux for newer Kubernetes versions
+* PWX-7206 - Update stork group snapshots to use list of volumes
+* PWX-7199 - Enable capacity usage command for centos kernel >= 3.10.0-862
+* PWX-7179 - Pool io priority for KOPS io1 volume should be correctly displayed
+* PWX-7007 - Add an alert when Cloud migration task is cancelled
+* PWX-7006 - Cloud migration cancel didn't cancel all the volume migrations
+* PWX-6770 - Restart docker apps using shared volumes on DCOS
+
 ## 2.0.1.1
 
 ### Key Fixes
