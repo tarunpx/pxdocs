@@ -6,6 +6,45 @@ keywords: portworx, release notes
 series: reference
 ---
 
+## 2.0.2.1
+
+### Key Fixes
+
+* PWX-7510 - Hide Secrets info from Diags / logs 
+* PWX-7214 - Having two watches to Etcd sometimes blocks watch updates
+
+## 2.0.2
+
+### Key Features and Enhancements
+
+* PWX-7207 - Allow docker with selinux for newer Kubernetes versions
+* PWX-7208 - Google Cloud KMS integration
+
+### Key Fixes
+
+* PWX-6770 - Restart docker apps using shared volumes on DCOS
+* PWX-7006 - Cloud migration cancel didn't cancel all the volume migrations
+* PWX-7007 - Add an alert when Cloud migration task is cancelled
+* PWX-7179 - Pool io priority for KOPS io1 volume should be correctly displayed
+* PWX-7199 - Enable capacity usage command for centos kernel >= 3.10.0-862
+* PWX-7226 - DCOS Portworx: Manually updated values in /etc/pwx/config.json does not persists
+* PWX-7267 - Hide unknown/non-handled licenses
+* PWX-7271 - 'pxctl secrets gcloud list-secrets' shows unnessassary line in console output
+* PWX-7280 - Logs getting flooded with "18 is not 14len(values)" after upgrading the kernel to 4.20.0-1
+* PWX-7304 - Handle journal device "read-only" cases
+* PWX-7348 - Handle journal device "offline" cases
+* PWX-7364 - Px boot stuck at ns mount
+* PWX-7366 - Portworx service restart issues including "missing mountpoint", or "cannot open file/directory"
+* PWX-7407 - OCI Monitor: Initiates cordoning even when px.ko was not loaded
+* PWX-7466 - K8S/Upgrade: Talisman does not support CRI/Containerd
+
+## 2.0.1.1
+
+### Key Fixes
+
+* PWX-7431 - Strip the labels on a config map to fit 63 characters.
+* PWX-7411 - PX does not come up after upgrade to 2.0.1, when auto-detecting network intf
+
 ## 2.0.1
 
 ### Key Fixes
@@ -67,6 +106,31 @@ series: reference
 
   Workaround: This is a variant of the previous errata. 
   For volume with replication factor set to 1, Cloudsnap backup does not resume after the node with replica goes down.
+
+## 1.7.6
+
+* PWX-7304 - PX keeps restarting, if journal device made read-only
+* PWX-7348 - PX keeps restarting, VM reboot after journal device made “offline”
+* PWX-7453 - btrfs send was not cleaned properly by px after cloudsnap failure of invalid keys
+* PWX-7481 - Shared volume failed to detach
+* PWX-7600 - do not reset coordinator when doing repl-move
+
+## 1.7.5
+
+* PWX-7033 - Objectostore endpoint failover not happening
+* PWX-7179 - io1 volume added to KOPS cluster gets displayed as STORAGE_MEDIUM_MAGNETIC
+* PWX-7212 - Cloudsnap-Restore: Increase restore verbose level for error cases
+* PWX-7267 - LIC: Hide unknown/non-handled licenses
+* PWX-7299 - export pool_status as a stat for prometheus
+* PWX-7364 - Namespace stuck volume issue 
+
+## 1.7.4
+
+* PWX-7142 - LIC: SuperMicro misinterpreted as VM [roblox]
+* PWX-7143 - LIC: Should hard-code "absolute maximums" into License evaluations
+* PWX-7214 - LIC: Goroutine leak at license watch re-supscription
+* PWX-7291 - Detect ssd based pools and mount with nossd if kernel version is less than 4.15
+* PWX-7292 - For all storage errors retry 3 times before making pool offline
 
 ## 1.7.3
 
