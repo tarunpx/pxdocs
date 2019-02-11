@@ -132,6 +132,23 @@ series: reference
 * PWX-7291 - Detect ssd based pools and mount with nossd if kernel version is less than 4.15
 * PWX-7292 - For all storage errors retry 3 times before making pool offline
 
+## 1.7.5
+
+* PWX-7364 Namespace stuck volume issue 
+* PWX-7299 export pool_status as a stat for prometheus
+* PWX-7267 LIC: Hide unknown/non-handled licenses
+* PWX-7212 Cloudsnap-Restore: Increase restore verbose level for error cases
+* PWX-7179 io1 volume added to KOPS cluster gets displayed as STORAGE_MEDIUM_MAGNETIC
+* PWX-7033 Objectostore endpoint failover not happening
+
+## 1.7.4
+
+* PWX-7292 For all storage errors retry 3 times before making pool offline
+* PWX-7291 Detect ssd based pools and mount with nossd if kernel version is less than 4.15
+* PWX-7214 LIC: Goroutine leak at license watch re-supscription
+* PWX-7143 LIC: Should hard-code "absolute maximums" into License evaluations
+* PWX-7142 LIC: SuperMicro misinterpreted as VM [roblox]
+
 ## 1.7.3
 
 * Provide a runtime option to enable more compact data out of flash media to avoid disk fragementation
