@@ -95,7 +95,7 @@ series: reference
 * PWX-5686: Implement accounting and display of space utilized by snapshots and clones.
 * PWX-6949: Decommissioned node getting listed from one node in the cluster and not from the other 
 * PWX-6617: PDM: Dump the cloud drive keys when PX loses kvdb connectivity.
-* PWX-5876:  Volume should get detached when out of quorum or pool down.
+* PWX-5876: Volume should get detached when out of quorum or pool down.
 
 ### Errata 
 
@@ -113,11 +113,11 @@ series: reference
 * PWX-7348 - PX keeps restarting, VM reboot after journal device made “offline”
 * PWX-7453 - cloudsnap cleanup didn't complete properly in cases where errors were encountered when tranmitting the diffs
 * PWX-7481 - Shared volume failed to detach
-* PWX-7600 - do not reset coordinator when doing repl-move
+* PWX-7600 - Volume mount status might be displayed incorrectly if the attached node reaches full capacity and replicas for that volume are moved to a different node 
 
 ## 1.7.5
 
-* PWX-7033 - Objectostore endpoint failover not happening
+* PWX-7033 - Objectstore endpoint failover not happening
 * PWX-7179 - io1 volume added to KOPS cluster gets displayed as STORAGE_MEDIUM_MAGNETIC
 * PWX-7212 - Cloudsnap-Restore: Increase restore verbose level for error cases
 * PWX-7267 - LIC: Hide unknown/non-handled licenses
@@ -126,7 +126,7 @@ series: reference
 
 ## 1.7.4
 
-* PWX-7142 - LIC: SuperMicro misinterpreted as VM [roblox]
+* PWX-7142 - LIC: SuperMicro misinterpreted as VM
 * PWX-7143 - LIC: Should hard-code "absolute maximums" into License evaluations
 * PWX-7214 - LIC: Goroutine leak at license watch re-supscription
 * PWX-7291 - Detect ssd based pools and mount with nossd if kernel version is less than 4.15
@@ -139,7 +139,7 @@ series: reference
 * PWX-7267 LIC: Hide unknown/non-handled licenses
 * PWX-7212 Cloudsnap-Restore: Increase restore verbose level for error cases
 * PWX-7179 io1 volume added to KOPS cluster gets displayed as STORAGE_MEDIUM_MAGNETIC
-* PWX-7033 Objectostore endpoint failover not happening
+* PWX-7033 Objectstore endpoint failover not happening
 
 ## 1.7.4
 
