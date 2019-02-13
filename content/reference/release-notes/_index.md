@@ -111,7 +111,7 @@ series: reference
 
 * PWX-7304 - PX keeps restarting, if journal device made read-only
 * PWX-7348 - PX keeps restarting, VM reboot after journal device made “offline”
-* PWX-7453 - btrfs send was not cleaned properly by px after cloudsnap failure of invalid keys
+* PWX-7453 - cloudsnap cleanup didn't complete properly in cases where errors were encountered when tranmitting the diffs
 * PWX-7481 - Shared volume failed to detach
 * PWX-7600 - do not reset coordinator when doing repl-move
 
