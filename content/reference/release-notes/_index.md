@@ -112,7 +112,7 @@ series: reference
 * PWX-7304 - PX keeps restarting, if journal device made read-only
 * PWX-7348 - PX keeps restarting, VM reboot after journal device made “offline”
 * PWX-7453 - cloudsnap cleanup didn't complete properly in cases where errors were encountered when tranmitting the diffs
-* PWX-7481 - Shared volume failed to detach
+* PWX-7481 - Shared volume mounts fail when clients connections abruptly lost and not cleaned up properly
 * PWX-7600 - Volume mount status might be displayed incorrectly if the attached node reaches full capacity and replicas for that volume are moved to a different node 
 
 ## 1.7.5
