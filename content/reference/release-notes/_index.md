@@ -113,7 +113,7 @@ series: reference
 * PWX-7348 - PX keeps restarting, VM reboot after journal device made “offline”
 * PWX-7453 - cloudsnap cleanup didn't complete properly in cases where errors were encountered when tranmitting the diffs
 * PWX-7481 - Shared volume mounts fail when clients connections abruptly lost and not cleaned up properly
-* PWX-7600 - Volume mount status might be displayed incorrectly if the attached node reaches full capacity and replicas for that volume are moved to a different node 
+* PWX-7600 - Volume mount status might be incorrectly displayed when the node where the volume is attached hits a storage full condition and replicas on that node are moved to a new node
 
 ## 1.7.5
 
